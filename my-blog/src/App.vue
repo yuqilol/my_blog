@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <!-- <add-blog></add-blog> -->
-    <show-blogs></show-blogs>
+    <!-- <show-blogs></show-blogs> -->
+    <blog-header></blog-header>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,16 +12,17 @@
 // import HelloWorld from './components/HelloWorld'
 import AddBlog from './components/addblog'
 import ShowBlogs from './components/ShowBlogs'
+import BlogHeader from './components/BlogHeader'
 
 export default {
   name: 'App',
   components: {
     AddBlog,
-    ShowBlogs
+    ShowBlogs,BlogHeader
   }
 }
 </script>
 
 <style>
-
+  
 </style>
